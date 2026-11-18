@@ -1,0 +1,13 @@
+# group  plugin@marketplace
+# Core: process skills, UI/UX, browser testing, GitHub, Slack, CLAUDE.md upkeep
+core   superpowers@claude-plugins-official
+core   frontend-design@claude-plugins-official
+core   ui-ux-pro-max@ui-ux-pro-max-skill
+core   claude-md-management@claude-plugins-official
+core   playwright@claude-plugins-official
+core   chrome-devtools-mcp@claude-plugins-official
+core   browser-use@claude-plugins-official
+core   github@claude-plugins-official
+core   slack@claude-plugins-official
+# Extras: only if you work on Shopify
+extras shopify-ai-toolkit@claude-plugins-official

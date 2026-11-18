@@ -1,0 +1,40 @@
+{
+  "model": "opus",
+  "effortLevel": "xhigh",
+  "modelSettings": {
+    "claude-opus-5-5": { "effortLevel": "xhigh", "autoCompactWindow": "auto" },
+    "claude-opus-4-8": { "effortLevel": "high" },
+    "claude-sonnet-5-5": { "effortLevel": "xhigh" },
+    "claude-fable-5-2": { "effortLevel": "medium" }
+  },
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "skillListingBudgetFraction": 0.1,
+  "skillOverrides": {
+    "design": "off",
+    "banner-design": "off",
+    "ui-styling": "off",
+    "design-system": "off",
+    "brand": "off",
+    "slides": "off"
+  },
+  "extraKnownMarketplaces": {
+    "claude-code-plugins": {
+      "source": { "source": "github", "repo": "anthropics/claude-code" }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": { "source": "github", "repo": "nextlevelbuilder/ui-ux-pro-max-skill" }
+    }
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "__RTK_HOOK_PATH__" }
+        ]
+      }
+    ]
+  }
+}
